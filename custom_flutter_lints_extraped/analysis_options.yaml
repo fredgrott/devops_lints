@@ -1,0 +1,365 @@
+# This file configures the analyzer, which statically analyzes Dart code to
+# check for errors, warnings, and lints.
+#
+# The issues identified by the analyzer are surfaced in the UI of Dart-enabled
+# IDEs (https://dart.dev/tools#ides-and-editors). The analyzer can also be
+# invoked from the command line by running `flutter analyze`.
+
+# The following line activates a set of recommended lints for Flutter apps,
+# packages, and plugins designed to encourage good coding practices.
+include: package:flutter_lints/flutter.yaml
+
+linter:
+  # The lint rules applied to this project can be customized in the
+  # section below to disable rules from the `package:flutter_lints/flutter.yaml`
+  # included above or to enable additional rules. A list of all available lints
+  # and their documentation is published at
+  # https://dart-lang.github.io/linter/lints/index.html.
+  #
+  # Instead of disabling a lint rule for the entire project in the
+  # section below, it can also be suppressed for a single line of code
+  # or a specific dart file by using the `// ignore: name_of_lint` and
+  # `// ignore_for_file: name_of_lint` syntax on the line or in the file
+  # producing the lint.
+  rules:
+    # from core
+    avoid_empty_else: true
+    avoid_relative_lib_imports: true
+    avoid_shadowing_type_parameters: true
+    avoid_types_as_parameter_names: true
+    await_only_futures: true
+    camel_case_extensions: true
+    camel_case_types: true
+    curly_braces_in_flow_control_structures: true
+    empty_catches: true
+    file_names: true
+    hash_and_equals: true
+    iterable_contains_unrelated_type: true
+    list_remove_unrelated_type: true
+    no_duplicate_case_values: true
+    non_constant_identifier_names: true
+    package_prefixed_library_names: true
+    prefer_generic_function_type_aliases: true
+    prefer_is_empty: true
+    prefer_is_not_empty: true
+    prefer_iterable_whereType: true
+    prefer_typing_uninitialized_variables: true
+    provide_deprecation_message: true
+    unnecessary_overrides: true
+    unrelated_type_equality_checks: true
+    valid_regexps: true
+    void_checks: true 
+
+
+
+
+    # avoid_print: false  # Uncomment to disable the `avoid_print` rule
+    # prefer_single_quotes: true  # Uncomment to enable the `prefer_single_quotes` rule
+    always_declare_return_types: true
+    annotate_overrides: true
+    avoid_null_checks_in_equality_operators: true
+    prefer_collection_literals: true
+    prefer_conditional_assignment: true
+    prefer_final_fields: true
+    prefer_for_elements_to_map_fromIterable: true
+    # prefer_generic_function_type_aliases: true part of flutter_lints core
+    prefer_if_null_operators: true
+    prefer_spread_collections: true
+    use_function_type_syntax_for_parameters: true
+    # avoid_empty_else: true part of flutter_lints core
+    avoid_init_to_null: true
+    # avoid_relative_lib_imports: true part of flutter_lints core
+    avoid_return_types_on_setters: true
+    # avoid_shadowing_type_parameters: true part of flutter_lints core
+    # avoid_types_as_parameter_names: true part of flutter_lints core
+    # curly_braces_in_flow_control_structures: true part of flutter_lints core
+    # empty_catches: true part of flutter_lints core
+    empty_constructor_bodies: true
+    library_names: true
+    library_prefixes: true
+    # no_duplicate_case_values: true part of flutter_lints core
+    null_closures: true
+    prefer_contains: true
+    prefer_equal_for_default_values: true
+    # prefer_is_empty: true part of flutter_lints core
+    # prefer_is_not_empty: true part of flutter-lints core
+    # prefer_iterable_whereType: true part of flutter_lints core
+    recursive_getters: true
+    slash_for_doc_comments: true
+    type_init_formals: true
+    unawaited_futures: true
+    unnecessary_const: true
+    unnecessary_new: true
+    unnecessary_null_in_if_null_operators: true
+    # unrelated_type_equality_checks: true part of flutter_lints core
+    use_rethrow_when_possible: true
+    # valid_regexps: true part of flutter_lints core
+    control_flow_in_finally: true
+    empty_statements: true
+    prefer_final_locals: true
+    throw_in_finally: true
+    # await_only_futures: true part of flutter_lints core
+    cancel_subscriptions: true
+    close_sinks: true
+    # hash_and_equals: true part of flutter_lints core
+    implementation_imports: true
+    package_api_docs: true
+    package_names: true
+    # package_prefixed_library_names: true part of flutter_lints core
+    test_types_in_equals: true
+    unnecessary_getters_setters: true
+    # void_checks: true part of flutter_lints core
+    type_annotate_public_apis: true
+    avoid_slow_async_io: true
+    invariant_booleans: true
+    # iterable_contains_unrelated_type: true part of flutter_lints core
+    # list_remove_unrelated_type: true part of flutter_lints core
+    literal_only_boolean_expressions: true
+    no_adjacent_strings_in_list: true
+    directives_ordering: true
+    only_throw_errors: true
+    prefer_asserts_in_initializer_lists: true
+    prefer_const_constructors: true
+    prefer_const_constructors_in_immutables: true
+    # prefer_typing_uninitialized_variables: true part of flutter_lints core
+    unnecessary_null_aware_assignments: true
+    # unnecessary_overrides: true part of flutter_lints core
+    use_string_buffers: true
+    use_full_hex_values_for_flutter_colors: true
+    prefer_inlined_adds: true
+    prefer_if_elements_to_conditional_expressions: true
+    unnecessary_parenthesis: true
+    prefer_const_declarations: true
+    prefer_null_aware_operators: true
+    always_put_required_named_parameters_first: true
+    avoid_catching_errors: true
+    avoid_double_and_int_checks: true
+    avoid_implementing_value_types: true
+    avoid_js_rounded_ints: true
+    avoid_private_typedef_functions: true
+    avoid_returning_nul: true
+    avoid_returning_null_for_future: true
+    avoid_returning_null_for_void: true
+    avoid_returning_this: true
+    avoid_single_cascade_in_expression_statements: true
+    avoid_unused_constructor_parameters: true
+    void_void_async: true
+    join_return_with_assignment: true
+    parameter_assignments: true
+    prefer_final_in_for_each: true
+    prefer_foreach: true
+    prefer_initializing_formals: true
+    # provide_deprecation_message: true part of flutter_lints core
+    sort_pub_dependencies: true
+    sort_unnamed_constructors_first: true
+    unnecessary_await_in_return: true
+    unsafe_html: true
+    # file_names: true part of flutter_lints core
+    cast_nullable_to_non_nullable: true
+    exhaustive_cases: true
+    prefer_relative_imports: true
+    tighten_type_of_initializing_formals: true
+    avoid_dynamic_call: true
+    avoid_catches_without_on_clauses: true
+    avoid_type_to_string: true
+    avoid_web_libraries_in_flutter: true
+    no_default_cases: true
+    no_logic_in_create_state: true
+    overridden_fields: true
+    prefer_asserts_with_message: true
+    prefer_mixin: true
+    prefer_null_aware_method_calls: true
+    sized_box_for_whitespace: true
+    unnecessary_nullable_for_final_variable_declarations: true
+    unnecessary_statements: true
+    use_build_context_synchronously: true
+    use_is_even_rather_than_modulo: true
+    comment_references: true
+    # - always_require_non_null_named_parameters # Obsolete because of NNBD.
+    # - prefer_void_to_null # Obsolete because of NNBD.
+    # - camel_case_extensions # Disabled because an underscore is useful to represent domain separation in generated code.
+    # - omit_local_variable_types # Too pedantic.
+    # - prefer_adjacent_string_concatenation # No comment.
+    # - prefer_single_quotes # Too pedantic.
+    # - always_put_control_body_on_new_line # Too pedantic.
+    # - always_specify_types # Too pedantic.
+    # - avoid_as # Too pedantic.
+    # - unnecessary_this # Too many false positives.
+    # - prefer_bool_in_asserts # No comment.
+    # - use_to_and_as_if_applicable # Too pedantic.
+    # - sort_child_properties_last # Too pedantic.
+    # - prefer_function_declarations_over_variables # With variables, the return type can be omitted safely which is useful in FP-style code.
+    # - always_use_package_imports # Prefer relative imports
+    # - avoid_annotating_with_dynamic # It is better to always be explicit about dynamic.
+    # - avoid_bool_literals_in_conditional_expressions # bool literals in conditional expressions make it easier to reason about them. X ? Y : Z is easier for humans than e.g. X || Z
+    # - avoid_classes_with_only_static_members # Classes with static members don't pollute the global namespace.
+    # - avoid_escaping_inner_quotes # Too pedantic.
+    # - avoid_function_literals_in_foreach_calls # Great lint, but if you worry about the memory overhead of closures you should probably switch to Rust.
+    # - avoid_multiple_declarations_per_line # Too pedantic.
+    # - avoid_equals_and_hash_code_on_mutable_classes # @immutable needs a dependency on meta.
+    # - avoid_positional_boolean_parameters # Too pedantic.
+    # - avoid_print # Too pedantic.
+    # - avoid_redundant_argument_values # Too pedantic.
+    # - avoid_renaming_method_parameters # Too pedantic.
+    # - avoid_setters_without_getters # Too pedantic.
+    # - avoid_types_on_closure_parameters # Too pedantic.
+    # - avoid_unnecessary_containers # Containers make it easy to iterate on designs.
+    # - camel_case_types # Underscores can be useful in generated code.
+    # - cascade_invocations # Too pedantic.
+    # - constant_identifier_names # Too pedantic.
+    # - deprecated_consistency # Too pedantic.
+    # - diagnostic_describe_all_properties # Too pedantic.
+    # - flutter_style_todos # Too pedantic.
+    # - do_not_use_environment # Too pedantic.
+    # - leading_newlines_in_multiline_strings # Too pedantic.
+    # - library_private_types_in_public_api # Too pedantic.
+    # - lines_longer_than_80_chars # Too pedantic.
+    # - missing_whitespace_between_adjacent_strings # Too pedantic.
+    # - non_constant_identifier_names # Too pedantic.
+    # - no_runtimeType_toString # Too pedantic.
+    # - one_member_abstracts # Too pedantic.
+    # - prefer_const_literals_to_create_immutables # Too pedantic.
+    # - prefer_constructors_over_static_methods # Too pedantic.
+    # - prefer_double_quotes # Too pedantic.
+    # - prefer_expression_function_bodies # Too pedantic.
+    # - prefer_interpolation_to_compose_strings # Too pedantic.
+    # - prefer_int_literals # Too pedantic.
+    # - prefer_is_not_operator # Too pedantic.
+    # - public_member_api_docs # Too pedantic.
+    # - sort_constructors_first # Too pedantic.
+    # - super_goes_last # Deprecated
+    # - unnecessary_brace_in_string_interps # Too pedantic.
+    # - unnecessary_final # final tells the reader 'This variable won't be mutated.'
+    # - unnecessary_lambdas # In rare cases it is possible for this to introduce bugs.
+    # - unnecessary_null_checks # Too pedantic.
+    # - unnecessary_raw_strings # Too pedantic.
+    # - unnecessary_string_escapes # Too pedantic.
+    # - unnecessary_string_interpolations # Too pedantic.
+    # - use_if_null_to_convert_nulls_to_bools # Too pedantic.
+    # - use_key_in_widget_constructors # Too pedantic.
+    # - use_late_for_private_fields_and_variables # Too pedantic.
+    # - use_named_constants # There could be multiple constants with the same value but different identifiers.
+    # - use_raw_strings # Too pedantic.
+    # - use_setters_to_change_properties # Too pedantic.
+    # - null_check_on_nullable_type_parameter # Too many false positives.
+    # - require_trailing_commas # Too many nonsensical cases especially in tests.
+    # - avoid_field_initializers_in_const_classes # Too pedantic.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Additional information about this file can be found at
+# https://dart.dev/guides/language/analysis-options

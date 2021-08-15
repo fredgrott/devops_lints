@@ -1,0 +1,129 @@
+# This file configures the analyzer, which statically analyzes Dart code to
+# check for errors, warnings, and lints.
+#
+# The issues identified by the analyzer are surfaced in the UI of Dart-enabled
+# IDEs (https://dart.dev/tools#ides-and-editors). The analyzer can also be
+# invoked from the command line by running `flutter analyze`.
+
+# The following line activates a set of recommended lints for Flutter apps,
+# packages, and plugins designed to encourage good coding practices.
+include: package:flutter_lints/flutter.yaml
+
+linter:
+  # The lint rules applied to this project can be customized in the
+  # section below to disable rules from the `package:flutter_lints/flutter.yaml`
+  # included above or to enable additional rules. A list of all available lints
+  # and their documentation is published at
+  # https://dart-lang.github.io/linter/lints/index.html.
+  #
+  # Instead of disabling a lint rule for the entire project in the
+  # section below, it can also be suppressed for a single line of code
+  # or a specific dart file by using the `// ignore: name_of_lint` and
+  # `// ignore_for_file: name_of_lint` syntax on the line or in the file
+  # producing the lint.
+  rules:
+    # avoid_print: false  # Uncomment to disable the `avoid_print` rule
+    # prefer_single_quotes: true  # Uncomment to enable the `prefer_single_quotes` rule
+    #
+    # from core
+    # from core
+    avoid_empty_else: true
+    avoid_relative_lib_imports: true
+    avoid_shadowing_type_parameters: true
+    avoid_types_as_parameter_names: true
+    await_only_futures: true
+    camel_case_extensions: true
+    camel_case_types: true
+    curly_braces_in_flow_control_structures: true
+    empty_catches: true
+    file_names: true
+    hash_and_equals: true
+    iterable_contains_unrelated_type: true
+    list_remove_unrelated_type: true
+    no_duplicate_case_values: true
+    non_constant_identifier_names: true
+    package_prefixed_library_names: true
+    prefer_generic_function_type_aliases: true
+    prefer_is_empty: true
+    prefer_is_not_empty: true
+    prefer_iterable_whereType: true
+    prefer_typing_uninitialized_variables: true
+    provide_deprecation_message: true
+    unnecessary_overrides: true
+    unrelated_type_equality_checks: true
+    valid_regexps: true
+    void_checks: true 
+
+
+
+
+    # grouped via effective dart
+    # Style
+    # camel_case_extensions: true part of flutter_lints core
+    # camel_case_types: true part of flutter_lints core
+    library_names: true
+    # non_constant_identifier_names: true part of flutter_lints core
+    constant_identifier_names: true
+    directives_ordering: true
+    lines_longer_than_80_chars: false 
+    # curly_braces_in_flow_control_structures: true part of flutter_lints core
+    # Documentation
+    slash_for_doc_comments: true
+    package_api_docs: true
+    public_member_api_docs: true
+    # comment_references unused due to https://github.com/dart-lang/sdk/issues/36974
+    # Usage
+    implementation_imports: true
+    avoid_function_literals_in_foreach_calls: true
+    # avoid_relative_lib_imports: true part of flutter_lints core
+    prefer_relative_imports: true
+    prefer_adjacent_string_concatenation: true
+    prefer_interpolation_to_compose_strings: true
+    prefer_collection_literals: true
+    # prefer_is_empty: true part of flutter_lints core
+    # prefer_is_not_empty: true part of flutter_lints core
+    # prefer_iterable_whereType: true part of flutter_lints core
+    prefer_function_declarations_over_variables: true
+    unnecessary_lambdas: true
+    prefer_equal_for_default_values: true
+    avoid_init_to_null: true
+    unnecessary_getters_setters: true
+    # unnecessary_getters disabled pending https://github.com/dart-lang/linter/issues/23
+    prefer_expression_function_bodies: true
+    unnecessary_this: true
+    prefer_initializing_formals: true
+    type_init_formals: true
+    empty_constructor_bodies: true
+    unnecessary_new: true
+    unnecessary_const: true
+    avoid_catches_without_on_clauses: true
+    avoid_catching_errors: true
+    use_rethrow_when_possible: true
+    # DESIGN
+    use_to_and_as_if_applicable: true
+    one_member_abstracts: true
+    avoid_classes_with_only_static_members: true
+    prefer_mixin: true
+    prefer_final_fields: true
+    use_setters_to_change_properties: true
+    avoid_setters_without_getters: true
+    avoid_returning_null: true
+    avoid_returning_this: true
+    type_annotate_public_apis: true
+    # prefer_typing_uninitialized_variables: true part of flutter_lints core
+    avoid_positional_boolean_parameters: true
+    # hash_and_equals: true part of flutter_lints core
+    avoid_equals_and_hash_code_on_mutable_classes: true
+    avoid_null_checks_in_equality_operators: true
+
+
+
+
+
+
+
+    
+
+
+# Additional information about this file can be found at
+# https://dart.dev/guides/language/analysis-options
